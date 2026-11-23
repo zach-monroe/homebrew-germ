@@ -1,0 +1,16 @@
+name: test
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install and test the formula
+        run: |
+          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+          brew tap zach-monroe/germ "$GITHUB_WORKSPACE"
+          brew install zach-monroe/germ/germ
+          brew test zach-monroe/germ/germ
+          germ version
