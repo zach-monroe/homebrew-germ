@@ -4,17 +4,17 @@
 class Germ < Formula
   desc "Fast GPU terminal with built-in tmux, coding-agent tools, and session sharing"
   homepage "https://github.com/zach-monroe/germ"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_linux do
     on_intel do
-      url "https://github.com/zach-monroe/germ/releases/download/v0.3.0/germ-linux-x86_64.tar.gz"
-      sha256 "3a1a13769be8b7fc4d6d396c5fd7f8f4ef27228301db57fbb89f5ef36501dd49"
+      url "https://github.com/zach-monroe/germ/releases/download/v0.4.0/germ-linux-x86_64.tar.gz"
+      sha256 "c3ab41283f505d9771ea0d266f3f847cd04b43fe477dd7da0eb5ea728d60d461"
     end
     on_arm do
-      url "https://github.com/zach-monroe/germ/releases/download/v0.3.0/germ-linux-aarch64.tar.gz"
-      sha256 "c93057291752f5c046af12aeafed3bd4cb99d1e6c84d9e1f47fc2b772a99f8c9"
+      url "https://github.com/zach-monroe/germ/releases/download/v0.4.0/germ-linux-aarch64.tar.gz"
+      sha256 "7aad339157cc416b3b58b853864593a56fb52ae1d341ceb20718de1ac604b387"
     end
   end
 
